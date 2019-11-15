@@ -575,3 +575,48 @@ a:hover img {opacity: 0.5; filter: alpha(opacity=50); -ms-filter: "alpha(opacity
 img{ max-width: 100%; height: auto; }
 strong{ color: #03a9f4; }
 h4, p{ line-height: 150%; }
+
+
+
+/*-----------------------------------------------
+テーブル
+--------------------------------------------------*/
+.table-common {
+  width: 100%;
+  border-top: 1px solid #e7e5dc;
+}
+
+.table-common th,
+.table-common td {
+  padding: 20px;
+}
+
+.table-common th {
+  background: rgba(231, 229, 220, 0.5);
+  border-bottom: 1px solid #e7e5dc;
+  border-right: 1px solid #e7e5dc;
+  text-align: center;
+}
+
+.table-common td {
+  border-bottom: 1px solid #e7e5dc;
+  border-right: 1px solid #e7e5dc;
+}
+
+.table-common td:last-child {
+  border-right: none;
+}
+/*-----------------------------------------------
+会社概要
+--------------------------------------------------*/
+.common-inner{
+
+ margin-bottom: 50px;
+}
+
+/*-----------------------------------------------
+Global
+--------------------------------------------------*/
+.container {
+  width: 80%;
+}
