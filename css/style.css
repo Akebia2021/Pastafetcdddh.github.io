@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /*-----------------------------------------------
 汎用
 --------------------------------------------------*/
@@ -33,7 +34,7 @@ i{ display: inline-block; padding-right: 10px; }
 
 /*ヘディング（主にTOPで使用）*/
 h2.ac{ font-family: "Rounded Mplus 1c"; padding: 20px 0 10px; font-size: 30px; font-weight: bold; z-index: 100; }
-h3{ color: #4c6917; font-size: 27px; z-index: 100; font-weight: bolder;  }
+h3{ color: #4c6917; font-size: 22px; z-index: 100; font-weight: bolder;  }
 h3 span{ font-size: 20px; z-index: 100;  }
 
 /*ヘディング（.page（基本的には下層ページ）で使用）*/
@@ -219,7 +220,7 @@ background: #fff799; border-radius: 50px;  text-align: center; height: 70px;}
 #services #pro ul li h4{ font-size: 14px; font-weight: bold; padding: 15px 0; text-align: left; }
 #services #pro ul li h3{ padding-bottom: 10px;}
 #services #pro ul li p{ text-align: left; font-size: 16px; line-height: 210%;}
-#services #pro ul li img{ width: 100%; padding: 20px;}
+/* #services #pro ul li img{ width: 100%; padding: 20px;} */
 
 #pro > ul p {font-family: sans-serif; line-height: 50% ;}
 
@@ -233,7 +234,6 @@ background: #fff799; border-radius: 50px;  text-align: center; height: 70px;}
 
 @media (max-width: 768px) {
   #top_con01{padding-top: 50px;}
-  h2.ac{ font-size: 20px; }
   #top_con01 ul li{ width: 50%; }
   .syain{ background: url(../img/top_con01_01.png) no-repeat top right;  }
   .syatyo{background: url(../img/top_con01_02.png) no-repeat top right; }
@@ -250,7 +250,7 @@ background: #fff799; border-radius: 50px;  text-align: center; height: 70px;}
   #services #pro ul li{ width: 90%; padding: 30px 0; margin: 0 auto; text-align: center; }
   #services #pro ul li h4{ font-size: 20px; line-height: 150%; }
   #services #pro ul li p{ font-size: 16px;  }
-  #services #pro ul li img{ width: 60%; margin: 0 auto; }
+  /* #services #pro ul li img{ width: 60%; margin: 0 auto; } */
 
   #top_con03 .fl , #top_con03 .fr{ float: none; width: 100%; }
   #top_con03 .fl { text-align: center; }
@@ -655,6 +655,14 @@ h4, p{ line-height: 150%; }
 
   
 }
+
+@media(min-width:769px){
+  #exterior_img{
+    text-align: right;
+    width: 50%;
+  }
+
+}
 /*-----------------------------------------------
 採用情報
 --------------------------------------------------*/
@@ -669,6 +677,58 @@ h4, p{ line-height: 150%; }
   letter-spacing: 1px;
 }
 
+#recruit_imgs{
+  display: block;
+}
+
+
+/*-----------------------------------------------
+サービス内容
+--------------------------------------------------*/
+@media(max-width:768px){
+  /* h2.ac{ font-size: 200px; } */
+  ul>li>h3{
+    text-align: left;
+    padding-top: 10px;
+  }
+  #services #pro ul li{
+    padding-top: 3%;
+    margin: auto;
+  }
+
+  #top_con03 .fr h4 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 20px;
+    border-bottom: none;
+  }
+
+  .char_logo{
+    width:50%;
+  }
+
+
+}
+#intro>p.lead{
+  font-family: "Rounded Mplus 1c";
+  font-weight: bolder;
+}
+
+section{
+  display: flex;
+}
+.circle{
+  height: 70%;
+  width:80%;
+  border-radius:50%;
+  line-height:50px;
+  text-align:center;
+  background:pink;
+  font-size:24px;
+  margin: auto;
+  margin-bottom: 30px;
+}
 
 
 /*-----------------------------------------------
@@ -678,12 +738,13 @@ Global
   width: 80%;
 }
 .ttl_area{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #53974a;
+  border-bottom: 1px solid #53974a;
 }
 
 .ttl_area > h2{
   padding: 20px;
+  color: #53974a;
 }
 
 .nav-pills{
@@ -698,4 +759,13 @@ Global
   .container {
     width: 100%;
   }
+  .meritBtn{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.meritBtn{
+  margin: 30px 10px;
+  background: #9dc258;
 }
